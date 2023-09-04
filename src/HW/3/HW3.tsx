@@ -20,8 +20,8 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-  let booferText = [currentText, ...texts]
-    setTexts(booferText)
+  let withNewText = [...texts, currentText]
+    setTexts(withNewText)
     setCurrentText('')
   };
 
