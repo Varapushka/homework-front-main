@@ -20,15 +20,14 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-  let withNewText = [...texts, currentText]
-    setTexts(withNewText)
-    setCurrentText('')
+  setTexts([...texts, currentText])
+   setCurrentText('')
   };
 
   return (
     <div id={'hw03'}>
       {currentText ? (
-        <h1 id={'hw03-text'}>{currentText}</h1>
+        <h1 id={'hw03-text'}>{currentText}</h1> //ЗДЕСЬ ХОТЕЛОСЬ БЫ УВИДЕТЬ ВВОДИМЫЙ ТЕКСТ
       ) : (
         <h1 id={'hw03-default-text'}>Здесь появится новое дело</h1> // ничего не меняем, здесь все норм
       )}
